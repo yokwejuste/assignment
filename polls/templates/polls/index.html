@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -16,11 +17,11 @@
         <!-- CSS Libraries -->
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-        <link href="lib/slick/slick.css" rel="stylesheet">
-        <link href="lib/slick/slick-theme.css" rel="stylesheet">
+        <link href="{% static '/lib/slick/slick.css' %}" rel="stylesheet">
+        <link href="{% static '/lib/slick/slick-theme.css' %}" rel="stylesheet">
 
         <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
+        <link href="{% static '/css/style.css' %}" rel="stylesheet">
     </head>
 
     <body>
@@ -54,14 +55,14 @@
                     <div class="col-lg-3 col-md-4">
                         <div class="b-logo">
                             <a href="index.html">
-                                <img src="img/logo.png" alt="Logo">
+                                <img src="{% static '/img/logo.png'%}" alt="Logo">
                             </a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-4">
                         <div class="b-ads">
                             <a href="https://htmlcodex.com">
-                                <img src="img/ads-1.jpg" alt="Ads">
+                                <img src="{% static '/img/ads-1.jpg' %}" alt="Ads">
                             </a>
                         </div>
                     </div>
@@ -119,7 +120,7 @@
                         <div class="row tn-slider">
                             <div class="col-md-6">
                                 <div class="tn-img">
-                                    <img src="img/news-450x350-1.jpg" />
+                                    <img src="{% static '/img/news-350x223-1.jpg' %}" />
                                     <div class="tn-title">
                                         <a href="">Lorem ipsum dolor sit amet</a>
                                     </div>
@@ -127,7 +128,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="tn-img">
-                                    <img src="img/news-450x350-2.jpg" />
+                                    <img src="{% static '/img/news-350x223-1.jpg' %}" />
                                     <div class="tn-title">
                                         <a  href="">Integer hendrerit elit eget purus sodales maximus</a>
                                     </div>
@@ -139,7 +140,7 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="tn-img">
-                                    <img src="img/news-350x223-1.jpg" />
+                                    <img src="{% static '/img/news-350x223-1.jpg' %}" />
                                     <div class="tn-title">
                                         <a href="">Lorem ipsum dolor sit</a>
                                     </div>
@@ -147,7 +148,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="tn-img">
-                                    <img src="img/news-350x223-2.jpg" />
+                                    <img src="{% static '/img/news-350x223-2.jpg' %}" />
                                     <div class="tn-title">
                                         <a href="">Lorem ipsum dolor sit</a>
                                     </div>
@@ -155,7 +156,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="tn-img">
-                                    <img src="img/news-350x223-3.jpg" />
+                                    <img src="{% static '/img/news-350x223-3.jpg' %}" />
                                     <div class="tn-title">
                                         <a href="">Lorem ipsum dolor sit</a>
                                     </div>
@@ -163,7 +164,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="tn-img">
-                                    <img src="img/news-350x223-4.jpg" />
+                                    <img src="{% static '/img/news-350x223-4.jpg' %}" />
                                     <div class="tn-title">
                                         <a href="">Lorem ipsum dolor sit</a>
                                     </div>
@@ -185,7 +186,7 @@
                         <div class="row cn-slider">
                             <div class="col-md-6">
                                 <div class="cn-img">
-                                    <img src="img/news-350x223-1.jpg" />
+                                    <img src="{% static '/img/news-350x223-1.jpg' %}" />
                                     <div class="cn-title">
                                         <a href="">Lorem ipsum dolor sit</a>
                                     </div>
@@ -193,7 +194,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="cn-img">
-                                    <img src="img/news-350x223-2.jpg" />
+                                    <img src="{% static '/img/news-350x223-2.jpg' %}" />
                                     <div class="cn-title">
                                         <a href="">Lorem ipsum dolor sit</a>
                                     </div>
@@ -201,7 +202,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="cn-img">
-                                    <img src="img/news-350x223-3.jpg" />
+                                    <img src="{% static '/img/news-350x223-3.jpg' %}" />
                                     <div class="cn-title">
                                         <a href="">Lorem ipsum dolor sit</a>
                                     </div>
@@ -214,7 +215,7 @@
                         <div class="row cn-slider">
                             <div class="col-md-6">
                                 <div class="cn-img">
-                                    <img src="img/news-350x223-4.jpg" />
+                                    <img src="{% static '/img/news-350x223-4.jpg' %}" />
                                     <div class="cn-title">
                                         <a href="">Lorem ipsum dolor sit</a>
                                     </div>
@@ -222,7 +223,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="cn-img">
-                                    <img src="img/news-350x223-5.jpg" />
+                                    <img src="{% static '/img/news-350x223-5.jpg' %}" />
                                     <div class="cn-title">
                                         <a href="">Lorem ipsum dolor sit</a>
                                     </div>
@@ -230,7 +231,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="cn-img">
-                                    <img src="img/news-350x223-1.jpg" />
+                                    <img src="{% static '/img/news-350x223-1.jpg' %}" />
                                     <div class="cn-title">
                                         <a href="">Lorem ipsum dolor sit</a>
                                     </div>
@@ -252,7 +253,7 @@
                         <div class="row cn-slider">
                             <div class="col-md-6">
                                 <div class="cn-img">
-                                    <img src="img/news-350x223-5.jpg" />
+                                    <img src="{% static '/img/news-350x223-5.jpg' %}" />
                                     <div class="cn-title">
                                         <a href="">Lorem ipsum dolor sit</a>
                                     </div>
@@ -260,7 +261,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="cn-img">
-                                    <img src="img/news-350x223-4.jpg" />
+                                    <img src="{% static '/img/news-350x223-4.jpg' %}" />
                                     <div class="cn-title">
                                         <a href="">Lorem ipsum dolor sit</a>
                                     </div>
@@ -268,7 +269,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="cn-img">
-                                    <img src="img/news-350x223-3.jpg" />
+                                    <img src="{% static '/img/news-350x223-3.jpg' %}" />
                                     <div class="cn-title">
                                         <a href="">Lorem ipsum dolor sit</a>
                                     </div>
@@ -281,7 +282,7 @@
                         <div class="row cn-slider">
                             <div class="col-md-6">
                                 <div class="cn-img">
-                                    <img src="img/news-350x223-2.jpg" />
+                                    <img src="{% static '/img/news-350x223-2.jpg' %}" />
                                     <div class="cn-title">
                                         <a href="">Lorem ipsum dolor sit</a>
                                     </div>
@@ -289,7 +290,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="cn-img">
-                                    <img src="img/news-350x223-1.jpg" />
+                                    <img src="{% static '/img/news-350x223-1.jpg' %}" />
                                     <div class="cn-title">
                                         <a href="">Lorem ipsum dolor sit</a>
                                     </div>
@@ -297,7 +298,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="cn-img">
-                                    <img src="img/news-350x223-3.jpg" />
+                                    <img src="{% static '/img/news-350x223-3.jpg' %}" />
                                     <div class="cn-title">
                                         <a href="">Lorem ipsum dolor sit</a>
                                     </div>
@@ -331,7 +332,7 @@
                             <div id="featured" class="container tab-pane active">
                                 <div class="tn-news">
                                     <div class="tn-img">
-                                        <img src="img/news-350x223-1.jpg" />
+                                        <img src="{% static '/img/news-350x223-1.jpg' %}" />
                                     </div>
                                     <div class="tn-title">
                                         <a href="">Lorem ipsum dolor sit amet</a>
@@ -339,7 +340,7 @@
                                 </div>
                                 <div class="tn-news">
                                     <div class="tn-img">
-                                        <img src="img/news-350x223-2.jpg" />
+                                        <img src="{% static '/img/news-350x223-2.jpg' %}" />
                                     </div>
                                     <div class="tn-title">
                                         <a href="">Lorem ipsum dolor sit amet</a>
@@ -347,7 +348,7 @@
                                 </div>
                                 <div class="tn-news">
                                     <div class="tn-img">
-                                        <img src="img/news-350x223-3.jpg" />
+                                        <img src="{% static '/img/news-350x223-3.jpg' %}" />
                                     </div>
                                     <div class="tn-title">
                                         <a href="">Lorem ipsum dolor sit amet</a>
@@ -357,7 +358,7 @@
                             <div id="popular" class="container tab-pane fade">
                                 <div class="tn-news">
                                     <div class="tn-img">
-                                        <img src="img/news-350x223-4.jpg" />
+                                        <img src="{% static '/img/news-350x223-4.jpg' %}" />
                                     </div>
                                     <div class="tn-title">
                                         <a href="">Lorem ipsum dolor sit amet</a>
@@ -365,7 +366,7 @@
                                 </div>
                                 <div class="tn-news">
                                     <div class="tn-img">
-                                        <img src="img/news-350x223-5.jpg" />
+                                        <img src="{% static '/img/news-350x223-5.jpg' %}" />
                                     </div>
                                     <div class="tn-title">
                                         <a href="">Lorem ipsum dolor sit amet</a>
@@ -373,7 +374,7 @@
                                 </div>
                                 <div class="tn-news">
                                     <div class="tn-img">
-                                        <img src="img/news-350x223-1.jpg" />
+                                        <img src="{% static '/img/news-350x223-1.jpg' %}" />
                                     </div>
                                     <div class="tn-title">
                                         <a href="">Lorem ipsum dolor sit amet</a>
@@ -383,7 +384,7 @@
                             <div id="latest" class="container tab-pane fade">
                                 <div class="tn-news">
                                     <div class="tn-img">
-                                        <img src="img/news-350x223-2.jpg" />
+                                        <img src="{% static '/img/news-350x223-2.jpg' %}" />
                                     </div>
                                     <div class="tn-title">
                                         <a href="">Lorem ipsum dolor sit amet</a>
@@ -391,7 +392,7 @@
                                 </div>
                                 <div class="tn-news">
                                     <div class="tn-img">
-                                        <img src="img/news-350x223-3.jpg" />
+                                        <img src="{% static '/img/news-350x223-3.jpg' %}" />
                                     </div>
                                     <div class="tn-title">
                                         <a href="">Lorem ipsum dolor sit amet</a>
@@ -399,7 +400,7 @@
                                 </div>
                                 <div class="tn-news">
                                     <div class="tn-img">
-                                        <img src="img/news-350x223-4.jpg" />
+                                        <img src="{% static '/img/news-350x223-4.jpg' %}" />
                                     </div>
                                     <div class="tn-title">
                                         <a href="">Lorem ipsum dolor sit amet</a>
@@ -426,7 +427,7 @@
                             <div id="m-viewed" class="container tab-pane active">
                                 <div class="tn-news">
                                     <div class="tn-img">
-                                        <img src="img/news-350x223-5.jpg" />
+                                        <img src="{% static '/img/news-350x223-5.jpg' %}" />
                                     </div>
                                     <div class="tn-title">
                                         <a href="">Lorem ipsum dolor sit amet</a>
@@ -434,7 +435,7 @@
                                 </div>
                                 <div class="tn-news">
                                     <div class="tn-img">
-                                        <img src="img/news-350x223-4.jpg" />
+                                        <img src="{% static '/img/news-350x223-4.jpg' %}" />
                                     </div>
                                     <div class="tn-title">
                                         <a href="">Lorem ipsum dolor sit amet</a>
@@ -442,7 +443,7 @@
                                 </div>
                                 <div class="tn-news">
                                     <div class="tn-img">
-                                        <img src="img/news-350x223-3.jpg" />
+                                        <img src="{% static '/img/news-350x223-3.jpg' %}" />
                                     </div>
                                     <div class="tn-title">
                                         <a href="">Lorem ipsum dolor sit amet</a>
@@ -452,7 +453,7 @@
                             <div id="m-read" class="container tab-pane fade">
                                 <div class="tn-news">
                                     <div class="tn-img">
-                                        <img src="img/news-350x223-2.jpg" />
+                                        <img src="{% static '/img/news-350x223-2.jpg' %}" />
                                     </div>
                                     <div class="tn-title">
                                         <a href="">Lorem ipsum dolor sit amet</a>
@@ -460,7 +461,7 @@
                                 </div>
                                 <div class="tn-news">
                                     <div class="tn-img">
-                                        <img src="img/news-350x223-1.jpg" />
+                                        <img src="{% static '/img/news-350x223-1.jpg' %}" />
                                     </div>
                                     <div class="tn-title">
                                         <a href="">Lorem ipsum dolor sit amet</a>
@@ -468,7 +469,7 @@
                                 </div>
                                 <div class="tn-news">
                                     <div class="tn-img">
-                                        <img src="img/news-350x223-3.jpg" />
+                                        <img src="{% static '/img/news-350x223-3.jpg' %}" />
                                     </div>
                                     <div class="tn-title">
                                         <a href="">Lorem ipsum dolor sit amet</a>
@@ -478,7 +479,7 @@
                             <div id="m-recent" class="container tab-pane fade">
                                 <div class="tn-news">
                                     <div class="tn-img">
-                                        <img src="img/news-350x223-4.jpg" />
+                                        <img src="{% static '/img/news-350x223-4.jpg' %}" />
                                     </div>
                                     <div class="tn-title">
                                         <a href="">Lorem ipsum dolor sit amet</a>
@@ -486,7 +487,7 @@
                                 </div>
                                 <div class="tn-news">
                                     <div class="tn-img">
-                                        <img src="img/news-350x223-5.jpg" />
+                                        <img src="{% static '/img/news-350x223-5.jpg' %}" />
                                     </div>
                                     <div class="tn-title">
                                         <a href="">Lorem ipsum dolor sit amet</a>
@@ -494,7 +495,7 @@
                                 </div>
                                 <div class="tn-news">
                                     <div class="tn-img">
-                                        <img src="img/news-350x223-1.jpg" />
+                                        <img src="{% static '/img/news-350x223-1.jpg' %}" />
                                     </div>
                                     <div class="tn-title">
                                         <a href="">Lorem ipsum dolor sit amet</a>
@@ -516,7 +517,7 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="mn-img">
-                                    <img src="img/news-350x223-1.jpg" />
+                                    <img src="{% static '/img/news-350x223-1.jpg' %}" />
                                     <div class="mn-title">
                                         <a href="">Lorem ipsum dolor sit</a>
                                     </div>
@@ -524,7 +525,7 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="mn-img">
-                                    <img src="img/news-350x223-2.jpg" />
+                                    <img src="{% static '/img/news-350x223-2.jpg' %}" />
                                     <div class="mn-title">
                                         <a href="">Lorem ipsum dolor sit</a>
                                     </div>
@@ -532,7 +533,7 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="mn-img">
-                                    <img src="img/news-350x223-3.jpg" />
+                                    <img src="{% static '/img/news-350x223-3.jpg' %}" />
                                     <div class="mn-title">
                                         <a href="">Lorem ipsum dolor sit</a>
                                     </div>
@@ -540,7 +541,7 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="mn-img">
-                                    <img src="img/news-350x223-4.jpg" />
+                                    <img src="{% static '/img/news-350x223-4.jpg' %}" />
                                     <div class="mn-title">
                                         <a href="">Lorem ipsum dolor sit</a>
                                     </div>
@@ -548,7 +549,7 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="mn-img">
-                                    <img src="img/news-350x223-5.jpg" />
+                                    <img src="{% static '/img/news-350x223-5.jpg' %}" />
                                     <div class="mn-title">
                                         <a href="">Lorem ipsum dolor sit</a>
                                     </div>
@@ -556,7 +557,7 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="mn-img">
-                                    <img src="img/news-350x223-1.jpg" />
+                                    <img src="{% static '/img/news-350x223-1.jpg' %}" />
                                     <div class="mn-title">
                                         <a href="">Lorem ipsum dolor sit</a>
                                     </div>
@@ -564,7 +565,7 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="mn-img">
-                                    <img src="img/news-350x223-2.jpg" />
+                                    <img src="{% static '/img/news-350x223-2.jpg' %}" />
                                     <div class="mn-title">
                                         <a href="">Lorem ipsum dolor sit</a>
                                     </div>
@@ -572,7 +573,7 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="mn-img">
-                                    <img src="img/news-350x223-3.jpg" />
+                                    <img src="{% static '/img/news-350x223-3.jpg' %}" />
                                     <div class="mn-title">
                                         <a href="">Lorem ipsum dolor sit</a>
                                     </div>
@@ -580,7 +581,7 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="mn-img">
-                                    <img src="img/news-350x223-4.jpg" />
+                                    <img src="{% static '/img/news-350x223-4.jpg' %}" />
                                     <div class="mn-title">
                                         <a href="">Lorem ipsum dolor sit</a>
                                     </div>
@@ -715,10 +716,10 @@
         <!-- JavaScript Libraries -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/slick/slick.min.js"></script>
+        <script src="{% static '/lib/easing/easing.min.js' %}"></script>
+        <script src="{% static '/lib/slick/slick.min.js' %}"></script>
 
         <!-- Template Javascript -->
-        <script src="js/main.js"></script>
+        <script src="{% static '/js/main.js' %}"></script>
     </body>
 </html>
